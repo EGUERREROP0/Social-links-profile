@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+    html,
+    body {
+      background-color: hsl(0, 0%, 8%);
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      padding: 20px;
+      background-color: hsl(0, 0%, 12%);
+      width: 300px;
+      border-radius: 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 70px;
+      }
+    }
+    .person-name, p{
+      color: white;
+    }
+    .city-name{
+       color: hsl(75, 94%, 57%);
+       padding: 0;
+       margin-top: 0;
+    }
+
+    .link {
+      width: 100%;
+
+      a {
+        text-align: center;
+        width: 80%;
+        background-color: hsl(0, 0%, 20%);
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .link a:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+
+    @media(min-width: 350){
+      .card{
+        width: 90%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div>
+      <img src="./assets/images/avatar-jessica.jpeg" alt="">
+      <h2 class="person-name">Jessica Randall</h2>
+      <p class="city-name">London, United Kingdom</p>
+      <p>"Front-end developer and avid reader."</p>
+
+      <div class="link">
+        <a href="">GitHub</a>
+        <a href="">Frontend Mentor</a>
+        <a href="">LinkedIn</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
